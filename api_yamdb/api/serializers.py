@@ -1,9 +1,8 @@
+from django.db.models import Avg
+from django.http import Http404
 from rest_framework import serializers
 from rest_framework.relations import SlugRelatedField
-from django.http import Http404
-from django.db.models import Avg
-
-from reviews.models import Category, Genre, Title, Comment, Review
+from reviews.models import Category, Comment, Genre, Review, Title
 
 
 class CategorySerializer(serializers.ModelSerializer):
