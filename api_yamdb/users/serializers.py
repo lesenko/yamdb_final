@@ -1,10 +1,8 @@
-from rest_framework import serializers, exceptions
+from rest_framework import exceptions, serializers
 from rest_framework.validators import UniqueValidator
 
-from api_yamdb.settings import (ATTENTION_RESERVED_NAME,
-                                NAME_NOT_FOUND,
+from api_yamdb.settings import (ATTENTION_RESERVED_NAME, NAME_NOT_FOUND,
                                 RESERVED_NAME)
-
 from .models import User
 
 

@@ -1,5 +1,4 @@
 from api import permissions
-from api_yamdb.settings import DEFAULT_FROM_EMAIL
 from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import send_mail
 from django.shortcuts import get_object_or_404
@@ -10,6 +9,7 @@ from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
 from rest_framework_simplejwt.tokens import AccessToken
 
+from api_yamdb.settings import DEFAULT_FROM_EMAIL
 from .models import User
 from .serializers import AdminSerializer, TokenSerializer, UserSerializer
 
