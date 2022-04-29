@@ -1,5 +1,4 @@
 from django.db import models
-
 from users.models import User
 
 SCORE = [(i, i) for i in range(11)]

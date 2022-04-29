@@ -4,12 +4,10 @@ from rest_framework import filters, mixins, viewsets
 from rest_framework.pagination import PageNumberPagination
 from reviews.models import Category, Genre, Review, Title
 
-from api.filters import TitleFilter
-from api.permissions import IsOwnerOrModeratorOrAdminOrReadOnly
-from api.serializers import CommentSerializer, ReviewSerializer
-
-from .permissions import AdminOrReadOnly
-from .serializers import (CategorySerializer, GenreSerializer, TitleSerializer,
+from .filters import TitleFilter
+from .permissions import AdminOrReadOnly, IsOwnerOrModeratorOrAdminOrReadOnly
+from .serializers import (CategorySerializer, CommentSerializer,
+                          GenreSerializer, ReviewSerializer, TitleSerializer,
                           TitleSerializerCreate)
 
 
