@@ -10,6 +10,7 @@ from rest_framework.viewsets import ModelViewSet
 from rest_framework_simplejwt.tokens import AccessToken
 
 from api_yamdb.settings import DEFAULT_FROM_EMAIL
+
 from .models import User
 from .serializers import AdminSerializer, TokenSerializer, UserSerializer
 
