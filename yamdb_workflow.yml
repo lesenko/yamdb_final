@@ -44,6 +44,8 @@ jobs:
       - name: Push to Docker Hub
         uses: docker/build-push-action@v2 
         with:
+          file: ./api_yamdb/Dockerfile
+          context: ./api_yamdb/
           push: true
           tags: lesenko/infra:latest
   deploy:
