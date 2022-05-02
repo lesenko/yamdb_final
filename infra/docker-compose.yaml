@@ -8,7 +8,7 @@ services:
     env_file:
       - ./.env
   web:
-    image: lesenko/infra:latest
+    image: lesenko/yamdb_final:latest
     build: ../api_yamdb/
     restart: always
     volumes:
