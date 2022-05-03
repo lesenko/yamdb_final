@@ -1,6 +1,10 @@
 ![example workflow](https://github.com/lesenko/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 # yamdb_final
+
+Проект доступен по ссылке http://51.250.25.61/api/v1/.
+Документация http://51.250.25.61/redoc/.
+
 ## Описание
 Проект api_yamdb собирает отзывы пользователей на произведения. 
 Произведения делятся на несколько категорий категории:
@@ -22,7 +26,12 @@
 
 ## Технологии в проекте 
 * Python
+* Django
 * Django Rest Framework
+* Docker
+* Nginx
+* Gunicorn
+* PostgreSQL
 
 ## Запуск проекта
 1. Клонировать репозиторий и перейти в него в командной строке
