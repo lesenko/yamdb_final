@@ -9,6 +9,8 @@ services:
       - ./.env
   web:
     image: lesenko/yamdb_final:latest
+    expose:
+      - 8000
     restart: always
     volumes:
       - static_value:/app/static/
