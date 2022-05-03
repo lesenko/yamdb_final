@@ -9,6 +9,7 @@ services:
       - ./.env
   web:
     image: lesenko/yamdb_final:latest
+    command: python -m gunicorn --bind :8000 --workers 1 todo.wsgi
     expose:
       - 8000
     restart: always
